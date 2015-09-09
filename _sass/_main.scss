@@ -1,1 +1,113 @@
 @charset "UTF-8";
+
+/* Base Elements */
+
+/* Immutable Utilities */
+
+.px0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  border-radius: $border-radius $border-radius 0 0
+}
+
+.card {
+  max-width: 28em;
+}
+
+@media (min-width: 46em) and (max-height: 48em) {
+  .card-flex { 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .portrait {
+    width: 40%;
+    height: 40%;
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+
+  .card {
+    max-width: 42em;
+  }
+}
+
+.unobstrusive-link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($black, 20%);
+    text-decoration: none;
+  }
+}
+
+.name-font {
+  font-size: 2em;
+}
+
+.profession-font {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+.table-key {
+  font-size: 0.7em;
+  vertical-align: baseline;
+  text-align: right;
+}
+
+.table-value {
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.mr-phone {
+  margin-right: 0.3em;
+}
+
+/*
+  Shadow styles copied from Material Design Light
+  Copyright (c) 2015 Google Inc.
+*/
+
+.mdl-shadow--2dp {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+
+.mdl-shadow--3dp {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12)
+}
+
+.mdl-shadow--4dp {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+}
+
+.mdl-shadow--6dp {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2)
+}
+
+.mdl-shadow--8dp {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+}
+
+.mdl-shadow--16dp {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
+}
+
+/* Color */
+
+/* Components */
+
+.center-cropped {
+  max-width: 40%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
